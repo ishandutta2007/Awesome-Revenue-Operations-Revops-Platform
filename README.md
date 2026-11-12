@@ -63,7 +63,7 @@ Leading commercial cloud Revenue Operations platforms, sorted descending by comp
 
 Self-hostable, community-driven RevOps engines, CRM backends, forecasting algorithms, and revenue intelligence pipelines. Repositories are sorted descending by GitHub stargazers ⭐.
 
-| Project 🛠️ | GitHub Stars ⭐ | Stack 🧰 | Primary RevOps Focus 🎯 | License 📜 |
+| Project 🛠️ | GitHub_Stars ⭐ | Stack 🧰 | Primary RevOps Focus 🎯 | License 📜 |
 | :--- | :---: | :--- | :--- | :--- |
 | **[Twenty](https://github.com/twentyhq/twenty)** 🏛️ | [![Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | TypeScript, NestJS, React, GraphQL, PostgreSQL | Modern open-source CRM alternative to Salesforce; custom objects, multi-pipeline tracking, and extensible RevOps APIs. | AGPL-3.0 |
 | **[Airbyte](https://github.com/airbytehq/airbyte)** 🌊 | [![Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers) | Java, Python, React, Docker | Universal ELT data integration sync for unifying CRM (Salesforce/HubSpot), billing (Stripe), and marketing data into data warehouses. | MIT / Elastic-2.0 |
