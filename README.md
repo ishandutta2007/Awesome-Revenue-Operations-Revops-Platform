@@ -1,147 +1,109 @@
-# Awesome-Revenue-Operations-Revops-Platform
-
 # Awesome Revenue Operations (RevOps) Platform
 
-> A curated list of top Revenue Operations (RevOps) platforms — both SaaS/Hosted commercial solutions and open-source alternatives for unifying data, forecasting, and execution across sales, marketing, and customer success.
-> 🌟 Star this repo if you find it useful! 🌟
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![RevOps Platform](https://img.shields.io/badge/RevOps-Revenue_Operations-blue.svg)](https://github.com/ishandutta2007/Awesome-Revenue-Operations-Revops-Platform)
+[![Track](https://img.shields.io/badge/Category-B2B_SaaS_&_Open_Source-success.svg)](https://github.com/ishandutta2007/Awesome-Revenue-Operations-Revops-Platform)
+
+A curated list of top **Revenue Operations (RevOps) platforms**, revenue intelligence tools, pipeline analytics engines, and sales execution frameworks. Discover both industry-standard hosted SaaS solutions and extensible open-source alternatives for unifying data, AI-driven forecasting, CPQ, territory management, and cross-functional alignment across sales, marketing, and customer success.
+
+> 🌟 **Star this repository if you find it helpful!** 🌟
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Clari](#clari)
-  - [Gong](#gong)
-  - [BoostUp.ai](#boostupai)
-  - [Aviso](#aviso)
-  - [LeanData](#leandata)
-  - [Fullcast](#fullcast)
-  - [Syncari](#syncari)
 - [Open-Source Software](#-open-source-software)
-  - [pipeline-diff](#pipeline-diff)
-  - [b2b-revenue-forecasting](#b2b-revenue-forecasting)
-  - [Revenue Ops AI Assistant](#revenue-ops-ai-assistant)
-  - [zeropipeline-mcp](#zeropipeline-mcp)
-  - [Horilla CRM](#horilla-crm)
-  - [Odden CRM Sales](#odden-crm-sales)
-  - [Eigent](#eigent)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global Revenue Operations (RevOps) and revenue intelligence platform market was valued at approximately **$4.4B – $4.9B in 2024** and is projected to reach **$9.6B to over $14B by 2030**, compounding at an estimated **CAGR of ~16.5%**. The sector remains **moderately to highly fragmented** rather than a winner-take-all monopoly: while enterprise heavyweights (Salesforce, HubSpot, Clari, Gong) dominate conversation and pipeline intelligence for top-tier enterprises, an extensive ecosystem of point solutions, modular data synchronizers, AI agent automations, and self-hosted open-source CRM/pipeline tools addresses specialized RevOps niches.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Revenue Operations (RevOps) platforms. These are not open-source but are included as reference points for feature comparison.
+Leading commercial cloud Revenue Operations platforms, sorted descending by company scale (valuation / annual recurring revenue).
 
-### Clari
-**Type:** Revenue platform with forecasting, pipeline inspection, and revenue intelligence  
-Clari is the long-standing enterprise RevOps standard, bundling forecasting, pipeline management, conversation intelligence (via Copilot), and revenue analytics into a single platform. It is often the benchmark against which other RevOps tools are evaluated, with deep Salesforce integration and a broad enterprise footprint. Pricing is quote-only and typically targets mid-to-large organizations with dedicated RevOps teams.
-
-### Gong
-**Type:** Revenue intelligence with conversation analytics and forecasting  
-Gong analyzes sales calls, emails, and meetings to surface deal risks, coaching opportunities, and forecast insights. It is frequently compared directly to Clari, with a strong reputation for conversation intelligence depth. Pricing is per-seat and scales with team size.
-
-### BoostUp.ai
-**Type:** AI-first revenue operations with forecasting and pipeline analytics  
-BoostUp provides AI-driven forecasting, deal inspection, pipeline analytics, and revenue intelligence, positioned for mid-market to enterprise RevOps teams. It is often evaluated as a Clari alternative, with a focus on AI depth and a smaller installed base than the category leaders [citation:13].
-
-### Aviso
-**Type:** AI-first forecasting and revenue operations  
-Aviso is one of the earliest AI-first RevOps platforms (founded 2012), covering AI forecasting, deal inspection, pipeline analytics, and basic AI coaching. It targets enterprise revenue ops teams wanting AI depth without Clari's bundling pressure, though its installed base and brand recognition are smaller [citation:13].
-
-### LeanData
-**Type:** Lead-to-account matching and routing  
-LeanData is a core RevOps data automation tool, specializing in lead-to-account matching, routing, and orchestration. It is often a foundational layer in enterprise RevOps stacks, ensuring inbound records reach the right owners before forecasting or analytics tools process them [citation:9].
-
-### Fullcast
-**Type:** Territory and go-to-market planning  
-Fullcast treats territory design, assignment rules, and coverage policies as living configuration that flows continuously into the CRM, rather than an annual planning exercise. It is scoped to territory and policy rather than full capacity planning or quota computation [citation:5].
-
-### Syncari
-**Type:** RevOps data unification and synchronization  
-Syncari enforces a single source of truth at the data layer, synchronizing and governing records across CRM, marketing automation, billing, and support so the same account looks identical everywhere. The caveat is organizational: someone must own the merge rules and survivorship logic, or the platform simply automates existing disagreements [citation:5].
+| Platform | Valuation / Revenue Scale | Starting Pricing | Free Tier / Trial Limit | Key RevOps Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Gong](https://www.gong.io)** | **~$4.5B – $7.25B Valuation**<br>*(~$500M ARR run-rate)* | **~$100 – $120/user/mo**<br>*(billed annually; base platform fee $5,000–$50,000/yr)* | **No free tier**<br>*(Sales-assisted 14 to 30-day pilot for qualified enterprise teams)* | Conversation intelligence, deal execution, call/email recording, predictive revenue forecasting, and rep coaching. |
+| **[Clari](https://www.clari.com)** | **~$2.6B Valuation**<br>*(~$150M – $180M ARR)* | **~$100 – $125/user/mo**<br>*(approx. $1,200–$1,500/user/yr billed annually)* | **No free tier**<br>*(No self-serve trial; custom POC available upon enterprise consultation)* | Enterprise RevOps standard for predictive sales forecasting, pipeline inspection, CRM data hygiene, and RevGPT/Copilot insights. |
+| **[LeanData](https://www.leandata.com)** | **~$100M – $250M Valuation**<br>*(~$22M – $36M ARR)* | **~$39/user/mo**<br>*(Standard Tier; annual contracts typically start at $25,000+/yr)* | **No free tier**<br>*(No public free trial; live sandbox demos and guided assessments upon request)* | Enterprise lead-to-account matching, multi-touch attribution, automated lead routing, and pipeline handoff orchestration. |
+| **[BoostUp.ai (Terret)](https://www.boostup.ai)** | **~$100M – $250M Valuation**<br>*(~$11M – $29M ARR)* | **~$51 – $79/user/mo**<br>*(Mid-market tier billed annually)* | **No free tier**<br>*(No self-serve free trial; guided custom POC provided upon sales request)* | AI-first revenue intelligence, risk scoring, buyer engagement tracking, and pipeline forecasting alternative to Clari. |
+| **[Fullcast](https://www.fullcast.io)** | **~$100M – $250M Valuation**<br>*(~$10M – $19M ARR)* | **Custom quote-based**<br>*(Scaled by operational headcount; typically starts at $15,000+/yr)* | **No free tier**<br>*(No self-serve free trial; interactive sandboxes and risk-free evaluations on request)* | End-to-end go-to-market territory design, sales capacity modeling, automated quota allocation, and policy enforcement. |
+| **[Aviso](https://www.aviso.com)** | **Private / Multi-Million Growth**<br>*(~$33M – $37M ARR)* | **~$40 – $70/user/mo**<br>*(Billed annually; entry packages typically start at $24,000/yr)* | **No free tier**<br>*(No open trial; tailored multi-week guided POC available on enterprise request)* | Early pioneer of AI forecasting, deal guidance, predictive pipeline analytics, conversational AI, and relationship intelligence. |
+| **[Syncari](https://www.syncari.com)** | **Growth Stage**<br>*(~$26.8M funded; ~$2M – $7M ARR)* | **~$995/month**<br>*(Platform tier based on synchronized record volume)* | **30-day free trial**<br>*(Syncari Test Drive sandbox with preloaded schemas and test connectors)* | Multi-directional RevOps data synchronization, automated deduplication, unified customer graphs, and cross-platform governance. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Revenue Operations tools. The open-source ecosystem is **fragmented** across pipeline analytics, forecasting libraries, AI-assisted operator tooling, and full CRM platforms rather than direct Clari or Gong equivalents.
+Self-hostable, community-driven RevOps engines, CRM backends, forecasting algorithms, and revenue intelligence pipelines. Repositories are sorted descending by GitHub stargazers.
 
-### pipeline-diff
-**Stack:** Python / HubSpot & Salesforce connectors | **License:** Open Source (PyPI)
-pipeline-diff is a CLI and dashboard tool for **pipeline change analysis**, tracking how deals move between forecast categories over time. It syncs deal snapshots from HubSpot or Salesforce, then answers questions like "which deals were pushed out this quarter" or "what changed since the last sync." It includes a demo mode that generates two years of synthetic pipeline history for an invented company, and exports reports and workspace folders designed for AI agent consumption (e.g., pointing Claude at the output folder to ask which deals slipped) [citation:11][citation:16].  
-**Best for:** RevOps analysts and sales leaders wanting to understand **why pipeline changed** rather than just seeing a static forecast, with local-first operation and no dashboard login required.
-
-### b2b-revenue-forecasting
-**Stack:** Python / pandas | **License:** Open Source (PyPI)
-b2b-revenue-forecasting is a Python library for **B2B revenue forecasting and quota cascading**. It supports hierarchical sales organizations, metric weighting via Pearson correlation, brand-new IC carve-outs, and **commit reconciliation** to detect and correct forecasting bias (e.g., sandbagging managers whose commits consistently understate actuals). Every output is a pandas DataFrame, making it easy to export to CSV, SQL, or a dashboard [citation:3].  
-**Best for:** RevOps and finance teams wanting **programmatic, auditable quota and forecast modeling** rather than a black-box SaaS tool, particularly where custom hierarchy or bias correction is needed.
-
-### Revenue Ops AI Assistant
-**Stack:** TypeScript / Node.js / PostgreSQL / OpenAI | **License:** Open Source (GitHub)
-A reference implementation of a **revenue intelligence backend** for B2B SaaS RevOps. It models accounts, contacts, opportunities, activities, campaigns, and revenue snapshots, then exposes bounded AI endpoints for **account briefs, pipeline summaries, and campaign insights**. The AI layer includes a structured fallback mode so the system remains functional without an OpenAI key, and the project explicitly states that AI must stay grounded in structured systems of record rather than improvising over loose data [citation:6].  
-**Best for:** Developers and technical RevOps teams wanting a **production-minded reference architecture** for AI-assisted operator summaries, not a turnkey product.
-
-### zeropipeline-mcp
-**Stack:** Python / MCP (Model Context Protocol) | **License:** Open Source (PyPI)
-zeropipeline-mcp is a **CRM that runs as an MCP server**, giving AI agents (Claude, Codex, Cursor) direct access to pipelines, deals, customers, activities, tasks, and automations via **30 built-in tools**. It positions itself as a free, open-source alternative to HubSpot, Salesforce, and Pipedrive with a native AI agent interface, zero-config auto-provisioning, and self-hostable deployment [citation:27].  
-**Best for:** Teams experimenting with **AI-agent-driven pipeline management** where the primary interface is a conversational agent rather than a web dashboard, accepting that it is a newer, lighter-weight CRM foundation.
-
-### Horilla CRM
-**Stack:** Django / Python / PostgreSQL | **License:** LGPL-2.1+
-Horilla CRM is a free, open-source CRM covering leads, opportunities, accounts, contacts, campaigns, and **forecasting** in a single Django application [citation:17][citation:22]. It includes role-based access control, REST API with Swagger docs, webhooks, and CSV/Excel import/export. The Docker image is actively maintained and requires PostgreSQL and Redis (for Channels and Celery) [citation:17].  
-**Best for:** Organizations wanting a **full open-source CRM foundation** with built-in forecasting and a modern Django stack, accepting that RevOps-specific analytics may need to be built on top.
-
-### Odden CRM Sales
-**Stack:** PHP / Laravel | **License:** Open Source (Packagist)
-Odden CRM Sales is a **revenue and deal acceleration engine** for the Odden RevOps platform, delivering multi-pipeline Kanban tracking, stage-gate enforcement, deal rotting and health scoring (0–100), CPQ quoting, outbound cadences, intelligent lead routing (RoundRobin, Weighted, Territory, SkillBased), and **weighted revenue forecasting with quota attainment** [citation:25].  
-**Best for:** Laravel teams wanting a **modular, code-first RevOps engine** that can be embedded into a broader application, rather than a standalone SaaS platform.
-
-### Eigent
-**Stack:** Open-source agentic platform | **License:** Open Source (self-hostable)
-Eigent is an open-source agentic cowork platform for RevOps teams, automating **CRM hygiene audits** (missing fields, duplicates, inactive opportunities), **pipeline and revenue reporting** (weekly funnel reports, QBRs), **process documentation** (SOPs, handoff guides), and **cross-team handoffs** (lead-to-sales, sales-to-CS) with automated notifications and context summaries. It integrates with Salesforce, HubSpot, and Pipedrive, and is 100% open source with self-hosting and support for local models [citation:20].  
-**Best for:** RevOps teams wanting **AI agent automation for operational tasks** (data quality, reporting, handoffs) without building custom scripts, accepting that it is an agentic automation layer rather than a system of record.
+| Project | GitHub Stars | Stack | Primary RevOps Focus | License |
+| :--- | :---: | :--- | :--- | :--- |
+| **[Twenty](https://github.com/twentyhq/twenty)** | [![Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | TypeScript, NestJS, React, GraphQL, PostgreSQL | Modern open-source CRM alternative to Salesforce; custom objects, multi-pipeline tracking, and extensible RevOps APIs. | AGPL-3.0 |
+| **[Airbyte](https://github.com/airbytehq/airbyte)** | [![Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers) | Java, Python, React, Docker | Universal ELT data integration sync for unifying CRM (Salesforce/HubSpot), billing (Stripe), and marketing data into data warehouses. | MIT / Elastic-2.0 |
+| **[Eigent](https://github.com/eigent-ai/eigent)** | [![Stars](https://img.shields.io/github/stars/eigent-ai/eigent?style=social&color=white)](https://github.com/eigent-ai/eigent/stargazers) | Python, Multi-Agent Framework, Local LLMs | Autonomous AI agent desktop for RevOps teams: automated CRM hygiene audits, QBR deck generation, and handoff summaries. | Open Source |
+| **[SuiteCRM](https://github.com/salesagility/SuiteCRM)** | [![Stars](https://img.shields.io/github/stars/salesagility/SuiteCRM?style=social&color=white)](https://github.com/salesagility/SuiteCRM/stargazers) | PHP, Symfony, JavaScript, MariaDB | Full-featured enterprise open-source CRM with pipeline workflows, quoting (CPQ), lead management, and contract tracking. | AGPL-3.0 |
+| **[EspoCRM](https://github.com/espocrm/espocrm)** | [![Stars](https://img.shields.io/github/stars/espocrm/espocrm?style=social&color=white)](https://github.com/espocrm/espocrm/stargazers) | PHP, Backbone.js, MySQL | Lightweight open-source sales operations system with sales pipeline kanban, BPMN flow automation, and sales analytics. | AGPL-3.0 |
+| **[Horilla CRM](https://github.com/horilla/horilla-crm)** | [![Stars](https://img.shields.io/github/stars/horilla/horilla-crm?style=social&color=white)](https://github.com/horilla/horilla-crm/stargazers) | Python, Django, PostgreSQL, Celery | Open-source CRM platform covering deals, accounts, lead scoring, campaign attribution, and built-in forecasting tools. | LGPL-2.1+ |
+| **[AI RevOps Intelligence Engine](https://github.com/kevorklepedjian1/ai-revops-intelligence-engine)** | [![Stars](https://img.shields.io/github/stars/kevorklepedjian1/ai-revops-intelligence-engine?style=social&color=white)](https://github.com/kevorklepedjian1/ai-revops-intelligence-engine/stargazers) | n8n, OpenAI, Gong/HubSpot API, Supabase | Automated revenue operations engine analyzing sales call recordings to detect churn risk, deal roadblocks, and push alerts. | MIT |
+| **[FlowPilot AI Revenue Ops](https://github.com/slowsliwa-maxim/flowpilot-ai-revenue-ops)** | [![Stars](https://img.shields.io/github/stars/slowsliwa-maxim/flowpilot-ai-revenue-ops?style=social&color=white)](https://github.com/slowsliwa-maxim/flowpilot-ai-revenue-ops/stargazers) | Python, FastAPI, Webhooks, LLM APIs | AI-assisted revenue operations backend for lead qualification, pipeline velocity diagnostics, and executive metrics reporting. | MIT |
+| **[pipeline-diff](https://github.com/goran-revops/pipeline-diff)** | [![Stars](https://img.shields.io/github/stars/goran-revops/pipeline-diff?style=social&color=white)](https://github.com/goran-revops/pipeline-diff/stargazers) | Python, HubSpot & Salesforce SDKs, CLI | CLI and dashboard utility for pipeline change analysis; inspects deal movements between forecast categories over time. | MIT |
+| **[b2b-revenue-forecasting](https://github.com/shreyasrkarwa/Analytics/tree/main/hierarchical_sales_forecasting)** | [![Stars](https://img.shields.io/github/stars/shreyasrkarwa/Analytics?style=social&color=white)](https://github.com/shreyasrkarwa/Analytics/stargazers) | Python, pandas, NetworkX, DAGs | Programmatic B2B sales quota cascading and commit reconciliation engine; models organizational hierarchies and adjusts bias. | MIT |
+| **[Revenue Ops AI Assistant](https://github.com/mizcausevic-dev/revenue-ops-ai-assistant)** | [![Stars](https://img.shields.io/github/stars/mizcausevic-dev/revenue-ops-ai-assistant?style=social&color=white)](https://github.com/mizcausevic-dev/revenue-ops-ai-assistant/stargazers) | TypeScript, Node.js, PostgreSQL, OpenAI | Reference backend for revenue intelligence: exposes bounded AI endpoints for deal risk briefings and GTM operator summaries. | MIT |
+| **[Odden CRM Sales](https://github.com/getodden/crm)** | [![Stars](https://img.shields.io/github/stars/getodden/crm?style=social&color=white)](https://github.com/getodden/crm/stargazers) | PHP, Laravel, Filament | Modular deal acceleration engine for RevOps: stage-gate enforcement, deal rotting scores, CPQ, and weighted forecasting. | MIT |
+| **[AINative GTM MCP](https://github.com/AINative-Studio/ainative-gtm-mcp)** | [![Stars](https://img.shields.io/github/stars/AINative-Studio/ainative-gtm-mcp?style=social&color=white)](https://github.com/AINative-Studio/ainative-gtm-mcp/stargazers) | TypeScript, Model Context Protocol (MCP) | Model Context Protocol server exposing 57 RevOps and marketing automation tools directly to AI agents (Claude, Cursor). | MIT |
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Primary Focus | AI/Agent Layer | Self-Hosted | Best For |
-|----------|---------|-------|---------------|----------------|-------------|----------|
-| **Clari** | Proprietary | Cloud | Forecasting + pipeline | (Copilot) | ❌ | Enterprise RevOps standard |
-| **Gong** | Proprietary | Cloud | Conversation intelligence | ✅ | ❌ | Call/email analysis + forecast |
-| **BoostUp** | Proprietary | Cloud | AI forecasting + analytics | ✅ | ❌ | Mid-market Clari alternative |
-| **LeanData** | Proprietary | Cloud | Lead matching + routing | ❌ | ❌ | RevOps data foundation |
-| **Fullcast** | Proprietary | Cloud | Territory + GTM policy | ❌ | ❌ | Continuous territory planning |
-| **Syncari** | Proprietary | Cloud | Data unification | ❌ | ❌ | Cross-system single truth |
-| **pipeline-diff** | Open Source | Python | Pipeline change analysis | (Agent export) | ✅ | Why pipeline moved |
-| **b2b-revenue-forecasting** | Open Source | Python | Quota + forecast modeling | ❌ | ✅ | Programmatic quota math |
-| **Revenue Ops AI Assistant** | Open Source | TypeScript/Node | AI operator summaries | ✅ | ✅ | Reference architecture |
-| **zeropipeline-mcp** | Open Source | Python/MCP | CRM via AI agent tools | ✅ Native | ✅ | Agent-first pipeline management |
-| **Horilla CRM** | LGPL-2.1+ | Django/Python | Full CRM + forecasting | ❌ | ✅ | Open-source CRM foundation |
-| **Odden CRM Sales** | Open Source | PHP/Laravel | Deal acceleration + CPQ | ❌ | ✅ | Modular RevOps engine |
-| **Eigent** | Open Source | Agentic | CRM hygiene + reporting | ✅ | ✅ | RevOps task automation |
+| Software | Model | Core RevOps Focus | Primary Strength | Self-Hostable | Best For |
+| :--- | :--- | :--- | :--- | :---: | :--- |
+| **Gong** | SaaS | Conversation & Deal Intelligence | Call/email analysis & deal progression | ❌ | High-velocity B2B sales teams |
+| **Clari** | SaaS | Revenue Cadence & Forecasting | Predictive AI forecasting & pipeline inspection | ❌ | Enterprise RevOps & executive planning |
+| **LeanData** | SaaS | Lead Routing & Attribution | Complex Salesforce lead-to-account matching | ❌ | Inbound-heavy enterprise revenue teams |
+| **BoostUp.ai** | SaaS | Predictive Pipeline Analytics | Deal health scoring & digital engagement tracking | ❌ | Mid-market revenue intelligence |
+| **Fullcast** | SaaS | Territory Planning & Policy | Real-time continuous territory management | ❌ | Complex sales org design & carve-outs |
+| **Aviso** | SaaS | AI Forecasting & Deal Guidance | Multi-layered AI predictive algorithms | ❌ | Advanced AI forecasting at scale |
+| **Syncari** | SaaS | Multi-System Data Synchronization | State synchronization & data governance | ❌ | Unifying fragmented CRM, ERP & billing stacks |
+| **Twenty** | Open Source | Modern CRM Foundation | Highly extensible, modern developer-first stack | ✅ | Teams wanting a self-hosted Salesforce alternative |
+| **Airbyte** | Open Source | GTM / RevOps Data Pipelines | 300+ connectors for sales and billing data | ✅ | Data-driven RevOps & analytical warehousing |
+| **Eigent** | Open Source | RevOps Agentic Automation | AI desktop agent for CRM hygiene & QBR reports | ✅ | Automated operational audits & summaries |
+| **SuiteCRM** | Open Source | Enterprise CRM & Quoting (CPQ) | Battle-tested workflows & module customization | ✅ | Traditional enterprise sales processes |
+| **EspoCRM** | Open Source | Lean Sales Management | Fast UI, Kanban pipelines, and BPMN flows | ✅ | SMBs seeking nimble sales operations |
+| **Horilla CRM** | Open Source | Full CRM & Pipeline Forecasting | Clean Django codebase & integrated forecasting | ✅ | Python/Django development environments |
+| **AI RevOps Engine** | Open Source | Call & Deal Risk Automation | n8n + Gong/HubSpot automated deal triaging | ✅ | Automated risk alerts into Slack & CRM |
+| **pipeline-diff** | Open Source | Pipeline Change Tracking | Local CLI snapshotting of deal stage shifts | ✅ | Answering "what changed in pipeline this week" |
+| **b2b-revenue-forecasting**| Open Source | Quota Cascading & Bias Math | DAG-based organizational quota modeling | ✅ | Programmatic finance & quota calculation |
+| **Odden CRM Sales** | Open Source | Deal Health & Laravel Engine | Embeddable deal rotting and CPQ engine | ✅ | Laravel & Filament web applications |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Revenue Operations (RevOps) tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source Revenue Operations tool, revenue forecasting library, or pipeline intelligence platform that should be included:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **analytical/forecasting libraries** (pipeline-diff, b2b-revenue-forecasting), **AI-assisted operator tooling** (Revenue Ops AI Assistant, zeropipeline-mcp, Eigent), and **full CRM foundations with forecasting** (Horilla CRM, Odden CRM Sales). No single open-source project replicates the full breadth of Clari or Gong's conversation intelligence and enterprise forecasting, but combinations of pipeline-diff (change analysis) + b2b-revenue-forecasting (quota math) + Eigent (automation) cover meaningful subsets of the RevOps workflow. The category's blind spot — **capacity modeling** (computing how much the team can actually sell given ramp, attrition, and tenure) — remains unaddressed by both commercial and open-source tools [citation:5].
+1. Fork this repository.
+2. Add the tool to the appropriate section in descending order.
+3. Ensure the project is actively maintained with a permissive or standard open-source license.
+4. Submit a pull request with a brief summary of why it belongs in the list.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This collection is distributed under the [Creative Commons Zero v1.0 Universal](LICENSE) (CC0 1.0) Public Domain dedication. Listed software projects and trademarks belong to their respective copyright owners.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **If you find this RevOps directory useful, consider giving it a star!** ⭐
